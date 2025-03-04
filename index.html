@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<main class="main">
+    <section class="dashboard">
+        <div class="container">
+            <div class="dashboard__content">
+                <div class="dashboard__panel">
+                    <div class="dashboard__info">
+                        <h1 class="dashboard__title">Dashboard intro title</h1>
+                        <div class="dashboard__text">
+                            <span>Ac vulputate purus semper fusce at. Non dolor in cras.</span>
+                        </div>
+                    </div>
+                    <div class="dashboard__tabs">
+                        <div class="tab">
+                            <div class="tab__icon">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 13.333V6.667m-4 6.666V2.667M4 13.333v-4" stroke="#4c57fb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+
+                            <div class="tab__title">Compare</div>
+                        </div>
+
+                        <div class="tab active">
+                            <div class="tab__icon">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.333 4.667H2.667c-.737 0-1.334.597-1.334 1.333v6.667c0 .736.597 1.333 1.334 1.333h10.666c.737 0 1.334-.597 1.334-1.333V6c0-.736-.597-1.333-1.334-1.333z" stroke="#4c57fb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.667 14V3.333A1.334 1.334 0 009.333 2H6.667a1.333 1.333 0 00-1.334 1.333V14" stroke="#4c57fb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+
+                            <div class="tab__title">Managers</div>
+                        </div>
+
+                        <div class="tab">
+                            <div class="tab__icon">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1677_33)" stroke="#4c57fb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11.333 14v-1.333A2.667 2.667 0 008.667 10H3.333a2.667 2.667 0 00-2.666 2.667V14M6 7.333A2.667 2.667 0 106 2a2.667 2.667 0 000 5.333zM15.333 14v-1.333a2.667 2.667 0 00-2-2.58"/></g><defs><clipPath id="clip0_1677_33"><path fill="#4c57fb" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                            </div>
+
+                            <div class="tab__title">Employees</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard__grid">
+                    <div class="dashboard__card">
+                        <div class="dashboard__card-head">
+                            <div class="dashboard__card-title">RLQ</div>
+                            <div class="dashboard__card-hint">
+                                <div class="icon"><img src="dist/img/info.svg" alt="" width="100%"></div>
+                                <div class="info">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                        <div class="dashboard__card-body">
+                            <canvas id="chartRLQ"></canvas>
+                        </div>
+                    </div>
+                    <div class="dashboard__card">
+                        <div class="dashboard__card-head">
+                            <div class="dashboard__card-title">KI</div>
+                            <div class="dashboard__card-hint">
+                                <div class="icon"><img src="dist/img/info.svg" alt="" width="100%"></div>
+                                <div class="info">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                        <div class="dashboard__card-body">
+                            <canvas id="chartKI"></canvas>
+                        </div>
+                    </div>
+                    <div class="dashboard__card">
+                        <div class="dashboard__card-head">
+                            <div class="dashboard__card-title">MZI</div>
+                            <div class="dashboard__card-hint">
+                                <div class="icon"><img src="dist/img/info.svg" alt="" width="100%"></div>
+                                <div class="info">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                        <div class="dashboard__card-body">
+                            <canvas id="chartMZI"></canvas>
+                        </div>
+                    </div>
+                    <div class="dashboard__card">
+                        <div class="dashboard__card-head">
+                            <div class="dashboard__card-title">Survey Topics</div>
+                            <div class="dashboard__card-hint">
+                                <div class="icon"><img src="dist/img/info.svg" alt="" width="100%"></div>
+                                <div class="info">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                        <div class="dashboard__card-body pt-1">
+                            <div class="list">
+                                <div class="list__item">
+                                    <div class="mark">A.</div>
+                                    <div class="text">Pulvinar iaculis placerat vitae dui</div>
+                                </div>
+                                <div class="list__item">
+                                    <div class="mark">B.</div>
+                                    <div class="text">Massa morbi mattis lectus ornare</div>
+                                </div>
+                                <div class="list__item">
+                                    <div class="mark">C.</div>
+                                    <div class="text">Diam sem vestibulum purus morbi</div>
+                                </div>
+                                <div class="list__item">
+                                    <div class="mark">D.</div>
+                                    <div class="text">Pulvinar iaculis placerat vitae dui</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard__card dashboard__card_lg">
+                        <div class="dashboard__card-head">
+                            <div class="dashboard__card-title">Survey Topics Scores</div>
+                            <div class="dashboard__card-hint">
+                                <div class="icon"><img src="dist/img/info.svg" alt="" width="100%"></div>
+                                <div class="info">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                        <div class="dashboard__card-body">
+                            <canvas id="chartScores"></canvas>
+                        </div>
+                    </div>
+                    <div class="dashboard__card dashboard__card_lg">
+                        <div class="dashboard__card-head">
+                            <div class="dashboard__card-title">KPs</div>
+                            <div class="dashboard__card-hint">
+                                <div class="icon"><img src="dist/img/info.svg" alt="" width="100%"></div>
+                                <div class="info">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                        <div class="dashboard__card-body">
+                            <canvas id="chartKPs"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="node_modules/chart.js/dist/chart.umd.js"></script>
+<script src="node_modules/chartjs-plugin-annotation/dist/chartjs-plugin-annotation.min.js"></script>
+<script src="dist/js/main.js"></script>
+</body>
+</html>
